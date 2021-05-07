@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include respond(1300px) {
+        font-size: 56.25%;
+    }
+
+    @include respond(900px) {
+        font-size: 50%;
+    }
+
+    @include respond(600px) {
+        font-size: 43.75%;
+    }
+
+    @include respond(400px) {
+        font-size: 40%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+    background-color: #845EC2;
+
+    @include respond(900px) {
+        padding: 0;
+    }
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}

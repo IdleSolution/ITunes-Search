@@ -1,0 +1,131 @@
+.album-modal {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba($color-black, .5);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+        background-color: $color-2;
+        width: 50%;
+        height: 70%;
+        position: relative;
+        padding: 3rem;
+
+        @include respond(700px) {
+            width: 70%;
+        }
+
+        @include respond(450px) {
+            width: 85%;
+        }
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: $color-white;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        cursor: pointer;
+
+    }
+
+    &__info {
+        color: $color-white;
+        height: 20%;
+    }
+
+    &__desc {
+        display: flex;
+
+        img {
+            margin-right: 2rem;
+        }
+
+        div {
+            display: flex;
+            justify-content: flex-end;
+            flex-flow: column;
+        }
+
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        span {
+            color: $color-6;
+        }
+    }
+
+    &__heading {
+        font-size: 5rem;
+
+        @include respond(800px) {
+            font-size: 4rem;
+        }
+
+        &--small {
+            font-size: 3.5rem;
+
+            @include respond(800px) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__songs {
+
+        &-container {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        width: 70%;
+        height: 60%;
+        background-color: rgba($color-3, .5);
+        border: 2px solid $color-4;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba($color-6, 0.3);
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-5;
+            outline: 1px solid $color-4;
+        }
+
+    }
+
+    &__song {
+        color: $color-white;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    &__error {
+        color: $color-white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}

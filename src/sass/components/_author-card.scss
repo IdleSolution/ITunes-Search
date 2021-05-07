@@ -1,0 +1,22 @@
+.author-card {
+    width: 60%;
+    padding: 2rem;
+
+    &__heading {
+        font-size: 4rem;
+        color: $color-3;
+    }
+
+    &__albums {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    &__line {
+        max-width: 100%;
+        background-color: $color-3;
+        height: .05rem;
+    }
+}

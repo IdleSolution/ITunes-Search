@@ -1,0 +1,25 @@
+.album-card {
+    margin: 1.5rem 2rem;
+    padding: 1rem 1rem 5rem 1rem;
+    position: relative;
+    background-color: #9e6bf1;
+    border-radius: 7px;
+    cursor: pointer;
+
+    &__name {
+        bottom: 15%;
+        left: 10%;
+        position: absolute;
+        color: $color-white;
+        width: 80%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @include respond(500px) {
+            font-size: 1.3rem;
+            bottom: 10%;
+        }
+    }
+
+}

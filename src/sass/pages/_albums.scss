@@ -1,0 +1,45 @@
+.albumspage {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 3%;
+    position: relative;
+
+
+    h1 {
+        margin-bottom: 3%;
+        color: $color-white;
+    }
+
+    &__background {
+        position: fixed;
+        width: 2rem;
+        height: 2rem;
+        z-index: -1;
+        left: 0;
+    }
+
+    &__icon {
+        font-size: 5rem;
+        position: fixed;
+        left: 5%;
+        cursor: pointer;
+        color: $color-white;
+    }
+
+    &__nofound {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        height: 100vh;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    &__nofound  &__icon {
+        top: 10%;
+    }
+}

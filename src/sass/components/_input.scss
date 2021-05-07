@@ -1,0 +1,37 @@
+.input {
+    font-size: 1.4rem;
+    color: $color-white;
+    font-weight: 700;
+    border: none;
+    box-shadow: 1px;
+    background: rgba($color-3, .85);
+    border-radius: 5px;
+
+    width: 100%;
+    padding: 1.5rem 1rem;
+    transition: all .1s;
+
+    &::placeholder {
+        color: $color-white;
+        font-weight: 700;
+        font-size: 1.4rem;
+
+        @include respond(800px) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: scaleY(1.05);
+        border-left: 4px solid rgba($color-1, 0.6);
+        background: $color-3;
+        opacity: 1;
+        
+    }
+
+    &:active, &:focus ~ .homepage__input-icon {
+        transform: scaleY(1.05);
+    }
+}
